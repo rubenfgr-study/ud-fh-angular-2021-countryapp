@@ -1,0 +1,10 @@
+<form (ngSubmit)="search()" autocomplete="off" class="animate__animated animate__lightSpeedInRight animate__faster">
+  <input
+    class="form-control"
+    [(ngModel)]="term"
+    (input)="keyPressed($event)"
+    type="text"
+    name="term"
+    [placeholder]="placeholder"
+  />
+</form>
